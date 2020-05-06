@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<people>
+	<person>
+	  <gender>female</gender>
+	  <firstname>Diteboho</firstname>
+	  <lastname>Modise</lastname>
+	   <age>22</age>
+	   <occupation>Software Developer</occupation>
+	</person> 
+	<person>
+	  <gender>male</gender>
+	  <firstname>Brega</firstname>
+	  <lastname>Post</lastname>
+	   <age>33</age>
+	   <occupation>Doctor</occupation>
+	</person>
+	<person>
+	  <gender>male</gender>
+	  <firstname>Maheme</firstname>
+	  <lastname>Dochobolo</lastname>
+	  <age>23</age>
+	  <occupation>Civil Engineer</occupation>
+	</person>
+	<person>
+	  <gender>female</gender>
+	  <firstname>Dikeledi</firstname>
+	  <lastname>Letjakge</lastname>
+	  <age>33</age>
+	  <occupation>IT Technician</occupation>
+	</person>
+</people>
