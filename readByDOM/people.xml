@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<people>
+	<person idNum = "001">
+	  <gender>female</gender>
+	  <firstname>Diteboho</firstname>
+	  <lastname>Modise</lastname>
+	   <age>22</age>
+	   <occupation>Software Developer</occupation>
+	</person> 
+	<person idNum = "002">
+	  <gender>male</gender>
+	  <firstname>Brega</firstname>
+	  <lastname>Post</lastname>
+	   <age>33</age>
+	   <occupation>Doctor</occupation>
+	</person>
+	<person idNum = "003">
+	  <gender>male</gender>
+	  <firstname>Maheme</firstname>
+	  <lastname>Dochobolo</lastname>
+	  <age>23</age>
+	  <occupation>Civil Engineer</occupation>
+	</person>
+	<person idNum = "004">
+	  <gender>female</gender>
+	  <firstname>Dikeledi</firstname>
+	  <lastname>Letjakge</lastname>
+	  <age>33</age>
+	  <occupation>IT Technician</occupation>
+	</person>
+</people>
