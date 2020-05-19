@@ -31,7 +31,7 @@ public class generateXML
 		Element emailElement = doc.createElement("email");
 		
 		Text t1 = doc.createTextNode("Lawrence");
-		Text t2 = doc.createTextNode("Newman");
+		Text t2 = doc.createTextNode("Peterson");
 		Text t3 = doc.createTextNode("44674");
 		Text t4 = doc.createTextNode("0837242844");
 		Text t5 = doc.createTextNode("lawrence.new@gmail.com");
@@ -51,9 +51,9 @@ public class generateXML
 		rootElement.appendChild(employeeElement);
 		doc.appendChild(rootElement);
 		Transformer trans = TransformerFactory.newInstance().newTransformer();
-		trans.transform(new DOMSource(doc), new StreamResult(new FileOutputStream("C:\\Users\\Aubuti Lebo\\eclipse-workspace\\GeneratingXML\\bin\\employees.xml")));
+		trans.transform(new DOMSource(doc), new StreamResult(new FileOutputStream("employees.xml")));
 		
-		System.out.println("XML Generated.Check it under C:\\Users\\Aubuti Lebo\\eclipse-workspace\\GeneratingXML\\bin\\employees.xml");
+		System.out.println("XML Generated as employees.xml");
 	}
 
 }
