@@ -29,7 +29,7 @@ public class xsltTransformer
 			e.printStackTrace();
 		}
 		
-		System.out.println("HTML File created succefully");	
+		System.out.println("HTML File created succefully.\nCheck it under src with the name People.html ");	
 		
 
 	}
