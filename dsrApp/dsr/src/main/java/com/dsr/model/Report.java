@@ -5,8 +5,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -18,17 +16,28 @@ import org.springframework.stereotype.Component;
 public class Report
 {
 	
-	@Id
-	@Column(name = "emp_psid")
-	private int empPSID;
-	private int project_id;
+	
+	@Column(name = "emp_id")
+	private int empId;
+	@Column(name = "project_id")
+	private int projectId;
+	
 	private int account_id;
 	private String task_completed;
 	private String task_planned;
 	private String task_issues;
+	@Id
 	@Column(name = "submission_date")
 	private Date submissionDate;
 	
+	public int getProjectId() 
+	{
+		return projectId;
+	}
+	public void setProjectId(int projectId) 
+	{
+		this.projectId = projectId;
+	}
 	
 	
 	public Date getSubmissionDate() 
@@ -40,18 +49,15 @@ public class Report
 		this.submissionDate = submissionDate;
 	}
 
-	public int getEmpPSID() {
-		return empPSID;
+	public int getEmpId() 
+	{
+		return empId;
 	}
-	public void setEmpPSID(int empPSID) {
-		this.empPSID = empPSID;
+	public void setEmpId(int empId)
+	{
+		this.empId = empId;
 	}
-	public int getProject_id() {
-		return project_id;
-	}
-	public void setProject_id(int project_id) {
-		this.project_id = project_id;
-	}
+
 	public int getAccount_id() {
 		return account_id;
 	}

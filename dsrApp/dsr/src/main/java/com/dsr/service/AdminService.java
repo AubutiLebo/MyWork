@@ -1,11 +1,9 @@
 package com.dsr.service;
 
-import java.awt.Desktop;
-import java.io.File;
 import java.io.FileOutputStream;
 import java.sql.Date;
 import java.util.List;
-import java.util.Optional;
+
 import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -156,7 +154,7 @@ public class AdminService
 		 * to specify the location, you can always save the file as just "dsr.pdf"
 		 * instead of "C:\\Users\\Aubuti Lebo\\Documents\\dsr.pdf""
 		 */		
-		String fileLocation = "C:\\Users\\Aubuti Lebo\\Documents\\report.pdf";
+		String fileLocation = "C:\\Users\\Aubuti Lebo\\Documents\\dsr.pdf";
 		PdfWriter.getInstance(document, new FileOutputStream(fileLocation));
 		document.open();
 		document.add(new Paragraph("List of DSRs for : "+todaysDate));
@@ -168,7 +166,7 @@ public class AdminService
 		addTableHeader(table);
 		addRows(table, reportList); 
 		document.add(table);
-		
+		document.close();
 		//Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler " + fileLocation);
 		
 		
